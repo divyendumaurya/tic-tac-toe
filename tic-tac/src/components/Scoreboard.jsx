@@ -1,15 +1,15 @@
 import React from 'react'
-import './Scoreboard.css'
+import './ScoreBoard.css'
 
-const Scoreboard = () => {
-  return (
-    
+const ScoreBoard = ({ scores, xPlaying }) => {
+    const { xScore, oScore } = scores;
+  
+    return (
       <div className="scoreboard">
-      <span className={`score x-score ${!xPlaying && "inactive"}`}>X - {xScore}</span>
-      <span className={`score o-score ${xPlaying && "inactive"}`}>O - {oScore}</span>
-    </div>
-    
-  )
-}
+        <span className={`score x-score ${!xPlaying && "inactive"}`}>X - {xScore}</span>
+        <span className={`score o-score ${xPlaying && "inactive"}`}>O - {oScore}</span>
+      </div>
+    )
+  }
 
-export default Scoreboard
+export default ScoreBoard

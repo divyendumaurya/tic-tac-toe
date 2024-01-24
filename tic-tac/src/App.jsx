@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState }from 'react';
 import './App.css'
-
-import Scoreboard from './components/Scoreboard';
 import Board from './components/Board';
+import ScoreBoard from './components/Scoreboard';
+import ResetButton from './components/ResetButton';
 
 const App = () => {
 
