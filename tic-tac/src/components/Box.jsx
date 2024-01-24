@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './Box.css'
 
 
 const Box = () => {
   return (
-    <div>
-      box
-    </div>
+    <button className='box'>X</button>
   )
 }
 
-export default Box
+export default Box;
